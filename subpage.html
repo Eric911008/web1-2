@@ -139,14 +139,14 @@
             text = text + '      	</ul>';
             text = text + '     </div>';
             text = text + '      </div>';
-            text = text + '<h4>飯店資訊</h4>'
+            text = text + '<h3>飯店資訊</h3>'
             text = text + '    <div class="card-content">';
             text = text + '      <label>。訂房: <a href="' + booking[i] + '" style="text-decoration:none">agoda優惠房價|booking.com</a></label><br>';
             text = text + '      <label>。星等: ' + start[i] + '星</label><br>';
             text = text + '      <label>。房間總數: ' + numbers[i] + '</label><br>';
             text = text + '      <label>。開業年份: ' + years[i] + '</label><br>';
             text = text + '      <label>。營業地址: ' + address[i] + '</label><br><br><br>';
-            text = text + '      <iframe src="' + embedurl[i] + '" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>';
+            text = text + '      <iframe src="' + embedurl[i] + '" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>';
             text = text + '    </div>';
             document.getElementById("feedback_form").innerHTML = '<a target="_blank" text-lighten-4" href="form.html?id=' + i + '">意見回饋</a>';
             document.getElementById("loopTest").innerHTML = text;
@@ -168,7 +168,7 @@
         <head>
             <script>
                 var xmlhttp = new XMLHttpRequest();
-                var url = "https://emma.pixnet.cc/mainpage/blog/categories/hot/28?page=2&per_page=3&api_version=2&format=json";
+                var url = "https://emma.pixnet.cc/mainpage/blog/categories/hot/28?page=13&per_page=4&api_version=2&format=json";
 
                 xmlhttp.onreadystatechange = function () {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
